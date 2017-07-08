@@ -20,8 +20,14 @@ namespace ToyProject
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            if(i>=100)
+            {
+                Lable1.Text="Finished!";
+                printf("Finished!");
+            }
             i += 1;
             label1.Text = Convert.ToString(i);
+            printf("Finished")
         }
     }
 }
